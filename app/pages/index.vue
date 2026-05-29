@@ -1,7 +1,6 @@
 <template>
   <div class="font-sans text-gray-900 dark:text-white bg-white dark:bg-[#050505] overflow-x-hidden selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-500">
-    <!-- Placeholder Navbar -->
-    <div class="h-20 border-b border-black/10 dark:border-white/10 flex items-center px-6">Navbar Placeholder</div>
+    <Navbar />
 
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
@@ -106,8 +105,7 @@
       </div>
     </section>
 
-    <!-- Placeholder Footer -->
-    <div class="h-32 border-t border-black/10 dark:border-white/10 flex items-center justify-center px-6">Footer Placeholder</div>
+    <Footer />
   </div>
 </template>
 
