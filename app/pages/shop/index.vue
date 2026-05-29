@@ -1,7 +1,6 @@
 <template>
   <div class="bg-white dark:bg-[#050505] min-h-screen transition-colors duration-500 overflow-x-hidden">
-    <!-- Navbar Placeholder -->
-    <div class="h-20 border-b border-black/10 dark:border-white/10 flex items-center px-6">Navbar Placeholder</div>
+    <Navbar />
 
     <main class="max-w-screen-2xl mx-auto px-4 lg:px-12 py-12 mt-20 md:mt-24">
       <!-- Header Section -->
@@ -79,33 +78,25 @@
           </div>
 
           <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-12">
-            <!-- Product Card Placeholder -->
-            <div v-for="product in products" :key="product._id" class="group relative cursor-pointer flex flex-col">
-              <div class="relative aspect-[3/4] overflow-hidden rounded-[2rem] bg-gray-50 dark:bg-[#0a0a0a] mb-6">
-                 <img :src="product.images[0]?.url || '/placeholder.png'" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
-                 <div class="absolute top-4 left-4 flex gap-2">
-                   <span v-if="product.isNewArrival" class="px-3 py-1 bg-white dark:bg-black text-black dark:text-white text-[9px] font-black tracking-[0.3em] uppercase rounded-full">New</span>
-                 </div>
-              </div>
-              <div class="flex flex-col items-center text-center px-4">
-                 <h3 class="text-sm font-black tracking-[0.2em] uppercase line-clamp-1 mb-2">{{ product.name }}</h3>
-                 <p class="text-xs text-gray-500 tracking-[0.1em] font-medium mb-3">₦{{ product.price.toLocaleString() }}</p>
-              </div>
-            </div>
+            <!-- Product Card Component -->
+            <ShopProductCard
+              v-for="product in products" 
+              :key="product._id" 
+              :product="product"
+              @quick-view="handleQuickView"
+            />
           </div>
         </div>
       </div>
     </main>
 
-    <!-- Footer Placeholder -->
-    <div class="h-32 border-t border-black/10 dark:border-white/10 flex items-center justify-center px-6">Footer Placeholder</div>
+    <Footer />
   </div>
 </template>
 
 <script setup>
 import { ref, reactive, onMounted } from 'vue'
 
-// Basic Reactive State simulating React Context & Hooks
 const isLoading = ref(true)
 const products = ref([])
 const totalProducts = ref(0)
@@ -121,11 +112,13 @@ const filters = reactive({
   page: 1
 })
 
-// Simulated GraphQL/API Fetch
+const handleQuickView = (product) => {
+  console.log("Quick view opened for:", product.name)
+}
+
 const fetchProducts = async () => {
   isLoading.value = true
   try {
-    // We hit our Nitro GraphQL endpoint!
     const response = await $fetch('/api/graphql', {
       method: 'POST',
       body: {
@@ -135,6 +128,12 @@ const fetchProducts = async () => {
               _id
               name
               price
+              category
+              inStock
+              isFeatured
+              freeShipping
+              discountPrice
+              isConcept
               images {
                 url
               }
