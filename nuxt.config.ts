@@ -8,8 +8,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
   ],
   css: [
-    '@/assets/css/dark.css',
-    '@/assets/css/responsive.css',
+    './assets/css/dark.css',
+    './assets/css/responsive.css',
   ],
   devtools: { enabled: true },
   app: {
