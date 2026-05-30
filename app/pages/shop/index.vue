@@ -95,12 +95,10 @@
 </template>
 
 <script setup>
-import { ref, reactive, onMounted } from 'vue'
+import { onMounted, reactive } from 'vue'
+import { useShop } from '@/composables/useShop'
 
-const isLoading = ref(true)
-const products = ref([])
-const totalProducts = ref(0)
-const isSidebarOpen = ref(false)
+const { isLoading, products, totalProducts, fetchProducts } = useShop()
 
 const filters = reactive({
   search: '',
@@ -113,45 +111,7 @@ const filters = reactive({
 })
 
 const handleQuickView = (product) => {
-  console.log("Quick view opened for:", product.name)
-}
-
-const fetchProducts = async () => {
-  isLoading.value = true
-  try {
-    const response = await $fetch('/api/graphql', {
-      method: 'POST',
-      body: {
-        query: `
-          query {
-            products {
-              _id
-              name
-              price
-              category
-              inStock
-              isFeatured
-              freeShipping
-              discountPrice
-              isConcept
-              images {
-                url
-              }
-            }
-          }
-        `
-      }
-    })
-    
-    if (response.data && response.data.products) {
-      products.value = response.data.products
-      totalProducts.value = products.value.length
-    }
-  } catch (err) {
-    console.error(err)
-  } finally {
-    isLoading.value = false
-  }
+  console.log('Quick view opened for:', product.name)
 }
 
 const resetFilters = () => {

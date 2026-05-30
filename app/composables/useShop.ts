@@ -6,11 +6,11 @@ import { ref } from 'vue'
  */
 export function useShop() {
   const products = ref([] as any[])
-  const total = ref(0)
-  const loading = ref(false)
+  const totalProducts = ref(0)
+  const isLoading = ref(false)
 
   const fetchProducts = async () => {
-    loading.value = true
+    isLoading.value = true
     try {
       const response = await $fetch('/api/graphql', {
         method: 'POST',
@@ -30,14 +30,14 @@ export function useShop() {
       })
       if (response?.data?.products) {
         products.value = response.data.products
-        total.value = products.value.length
+        totalProducts.value = products.value.length
       }
     } catch (e) {
       console.error('[Shop GraphQL] fetch error', e)
     } finally {
-      loading.value = false
+      isLoading.value = false
     }
   }
 
-  return { products, total, loading, fetchProducts }
+  return { products, totalProducts, isLoading, fetchProducts }
 }
