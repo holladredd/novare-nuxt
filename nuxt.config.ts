@@ -1,8 +1,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  future: {
+future: {
     compatibilityVersion: 4,
   },
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+  ],
   css: [
     '@/assets/css/dark.css',
     '@/assets/css/responsive.css'
