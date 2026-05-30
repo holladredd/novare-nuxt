@@ -3,10 +3,11 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
+  css: [
+    '@/assets/css/dark.css',
+    '@/assets/css/responsive.css'
   ],
+
   devtools: { enabled: true },
   app: {
     head: {
