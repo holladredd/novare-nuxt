@@ -22,9 +22,6 @@
               <NuxtLink to="/shop" class="text-sm tracking-widest font-light text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Shop All</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/concepts" class="text-sm tracking-widest font-light text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Concept</NuxtLink>
-            </li>
-            <li>
               <NuxtLink to="/lookbook" class="text-sm tracking-widest font-light text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Lookbook</NuxtLink>
             </li>
           </ul>
@@ -37,10 +34,10 @@
           </h3>
           <ul class="space-y-4">
             <li>
-              <NuxtLink to="/about" class="text-sm tracking-widest font-light text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">About Us</NuxtLink>
+              <NuxtLink to="/terms" class="text-sm tracking-widest font-light text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Terms</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/lookbook" class="text-sm tracking-widest font-light text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Lookbook</NuxtLink>
+              <NuxtLink to="/return-policy" class="text-sm tracking-widest font-light text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Returns</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/profile" class="text-sm tracking-widest font-light text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">My Profile</NuxtLink>

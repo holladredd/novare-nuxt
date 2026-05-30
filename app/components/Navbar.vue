@@ -135,8 +135,6 @@ const mobileOpen = ref(false);
 
 const links = [
   { name: "SHOP", href: "/shop" },
-  { name: "CONCEPTS", href: "/concepts" },
   { name: "LOOKBOOK", href: "/lookbook" },
-  { name: "ABOUT", href: "/about" },
 ];
 </script>
