@@ -6,7 +6,7 @@ import {
   Building2,
   Globe,
   CheckCircle2,
-} from "lucide-react";
+} from "lucide-vue-next";
 
 defineProps({
   data: {

@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Save } from "lucide-react";
+import { Save } from "lucide-vue-next";
 import { toast } from "@/utils/alert";
 
 const props = defineProps({

@@ -8,7 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Upload, FileText } from "lucide-react";
+import { Upload, FileText } from "lucide-vue-next";
 
 const props = defineProps({
   data: {

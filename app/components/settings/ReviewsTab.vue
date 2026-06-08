@@ -2,7 +2,7 @@
 import { ref, computed } from "vue";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Star, MessageSquare, ThumbsUp } from "lucide-react";
+import { Star, MessageSquare, ThumbsUp } from "lucide-vue-next";
 import { Button } from "@/components/ui/button";
 import {
   Select,

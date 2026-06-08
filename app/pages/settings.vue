@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from "vue";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Building2, ArrowLeft, Users, Info, ChevronRight } from "lucide-react";
+import { Building2, ArrowLeft, Users, Info, ChevronRight } from "lucide-vue-next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import TeamMembersTab from "@/components/settings/TeamMembersTab.vue";

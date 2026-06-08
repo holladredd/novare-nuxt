@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Shield, UserPlus, Trash2, Lock } from "lucide-react";
+import { Shield, UserPlus, Trash2, Lock } from "lucide-vue-next";
 import { toast } from "@/utils/alert";
 
 const props = defineProps({

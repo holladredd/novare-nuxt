@@ -22,7 +22,7 @@ import {
   ChevronRight,
   Eye,
   EyeOff,
-} from "lucide-react";
+} from "lucide-vue-next";
 import AccountDetails from "@/components/wallet/AccountDetails.vue";
 
 definePageMeta({

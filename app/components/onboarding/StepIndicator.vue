@@ -1,5 +1,5 @@
 <script setup>
-import { Check } from "lucide-react";
+import { Check } from "lucide-vue-next";
 
 defineProps({
   steps: {

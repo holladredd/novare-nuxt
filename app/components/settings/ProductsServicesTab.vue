@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Plus, Trash2, Package, Wrench, ImagePlus, X } from "lucide-react";
+import { Plus, Trash2, Package, Wrench, ImagePlus, X } from "lucide-vue-next";
 import { toast } from "@/utils/alert";
 
 const MAX_IMAGES = 5;

@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/utils/alert";
-import { Building2, ArrowRight, RotateCcw } from "lucide-react";
+import { Building2, ArrowRight, RotateCcw } from "lucide-vue-next";
 import {
   InputOTP,
   InputOTPGroup,

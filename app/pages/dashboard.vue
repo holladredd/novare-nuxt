@@ -11,7 +11,7 @@ import {
   Eye,
   Settings,
   Wallet,
-} from "lucide-react";
+} from "lucide-vue-next";
 import {
   ChartContainer,
   BarChart,

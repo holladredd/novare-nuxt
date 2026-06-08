@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
-import { Save, Clock } from "lucide-react";
+import { Save, Clock } from "lucide-vue-next";
 import { toast } from "@/utils/alert";
 
 const defaultBusinessHours = [

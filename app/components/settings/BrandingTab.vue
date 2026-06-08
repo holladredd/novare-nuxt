@@ -8,7 +8,7 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Camera, ImageIcon, Trash2, Upload } from "lucide-react";
+import { Camera, ImageIcon, Trash2, Upload } from "lucide-vue-next";
 import { toast } from "@/utils/alert";
 
 const logo = ref(null);

@@ -7,7 +7,7 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Building2, ShieldCheck, ExternalLink } from "lucide-react";
+import { Building2, ShieldCheck, ExternalLink } from "lucide-vue-next";
 
 definePageMeta({
   layout: false,

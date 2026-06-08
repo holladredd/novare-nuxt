@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Plus, Trash2, MapPin, Phone, Star } from "lucide-react";
+import { Plus, Trash2, MapPin, Phone, Star } from "lucide-vue-next";
 import { toast } from "@/utils/alert";
 
 const branches = ref([]);

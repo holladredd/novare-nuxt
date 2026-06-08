@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Landmark, Copy, Check } from "lucide-react";
+import { Landmark, Copy, Check } from "lucide-vue-next";
 import { Button } from "@/components/ui/button";
 
 defineProps({

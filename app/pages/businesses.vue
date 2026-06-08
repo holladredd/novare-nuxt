@@ -2,7 +2,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Building2, Plus, ChevronRight } from "lucide-react";
+import { Building2, Plus, ChevronRight } from "lucide-vue-next";
 
 definePageMeta({
   layout: false,

@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import { Upload, X, FileText } from "lucide-react";
+import { Upload, X, FileText } from "lucide-vue-next";
 
 const props = defineProps({
   data: {

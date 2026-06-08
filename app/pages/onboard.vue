@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/utils/alert";
-import { ArrowLeft, ArrowRight, Send, Building2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, Send, Building2 } from "lucide-vue-next";
 import StepIndicator from "@/components/onboarding/StepIndicator.vue";
 import BusinessInfoStep from "@/components/onboarding/BusinessInfoStep.vue";
 import RegistrationStep from "@/components/onboarding/RegistrationStep.vue";
